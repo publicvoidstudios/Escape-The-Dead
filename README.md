@@ -46,4 +46,6 @@
  **Choises that need explanation:**
  - This project is made using Standard Unity's built in pipeline. I understand that URP could bring many cool features, such as Post Processing and simple way to create Shaders (Shader Graph), but I chose Standard Pipeline. Reason for this is that HDRP is definitely made not for mobile devices, and URP does not support OpenGL ES 2.0, which is still used by many devices.
 
+- Unity version: 2020.3.25f1
+
 **Please note:** this project is for reference only, any use which can be considered as commercial is prohibited!
