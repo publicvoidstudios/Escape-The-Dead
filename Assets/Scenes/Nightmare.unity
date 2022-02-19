@@ -29302,7 +29302,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647666480}
   m_LocalRotation: {x: -0, y: 0.3386559, z: -0, w: 0.94091034}
-  m_LocalPosition: {x: -0.57123643, y: 0.054325342, z: -1.7504728}
+  m_LocalPosition: {x: -0.61913073, y: 0.054325223, z: -1.7108653}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 401149830}
@@ -56460,8 +56460,8 @@ Light:
   m_Color: {r: 1, g: 0.92038345, b: 0.7216981, a: 1}
   m_Intensity: 1
   m_Range: 40
-  m_SpotAngle: 54.803783
-  m_InnerSpotAngle: 19.297108
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 3
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -57328,7 +57328,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724700569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.77934945, y: 1.4403253, z: -15.52}
+  m_LocalPosition: {x: 0.71719944, y: 1.4403253, z: -15.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2097316632}
@@ -63508,7 +63508,7 @@ MonoBehaviour:
   m_VerticalAxis:
     Value: 0
     m_SpeedMode: 1
-    m_MaxSpeed: 1.2
+    m_MaxSpeed: 1.024236
     m_AccelTime: 0.2
     m_DecelTime: 0.2
     m_InputAxisName: Vertical
@@ -63532,7 +63532,7 @@ MonoBehaviour:
   m_HorizontalAxis:
     Value: 0
     m_SpeedMode: 1
-    m_MaxSpeed: 3
+    m_MaxSpeed: 2.627377
     m_AccelTime: 0.2
     m_DecelTime: 0.2
     m_InputAxisName: Horizontal

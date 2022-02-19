@@ -106,6 +106,9 @@ public class GPGSManager : MonoBehaviour
         playerID.text = "ID: " + "null";
         //Deactivate Google buttons
         GoogleButtons(false);
+        //Activate SignIn button
+        signButtons[0].SetActive(true);
+        signButtons[1].SetActive(false);
     }
 
     public void ShowAchievementsUI()
@@ -116,6 +119,19 @@ public class GPGSManager : MonoBehaviour
     public void ShowLeaderboardUI()
     {
         Social.ShowLeaderboardUI();
+    }
+
+    public static void GrantAchievementAnywhere(string achievementID)
+    {
+        Social.ReportProgress(achievementID,
+            100.0f,
+            (bool success) =>
+            {
+                if (success)
+                {
+                    //Do something when got achievement
+                }
+            });
     }
 
     public void GrantBasicAchievement(string achievementID)

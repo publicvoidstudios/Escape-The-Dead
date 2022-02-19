@@ -61467,7 +61467,7 @@ MonoBehaviour:
       m_LegacyHeadingDefinition: -1
       m_LegacyVelocityFilterStrength: -1
   m_VerticalRecentering:
-    m_enabled: 1
+    m_enabled: 0
     m_WaitTime: 0.1
     m_RecenteringTime: 0.2
     m_LegacyHeadingDefinition: -1
@@ -61491,7 +61491,7 @@ MonoBehaviour:
       m_LegacyHeadingDefinition: -1
       m_LegacyVelocityFilterStrength: -1
   m_HorizontalRecentering:
-    m_enabled: 1
+    m_enabled: 0
     m_WaitTime: 0.1
     m_RecenteringTime: 0.2
     m_LegacyHeadingDefinition: -1
@@ -61999,6 +61999,14 @@ PrefabInstance:
     - target: {fileID: 3201462277343454747, guid: ae8e6bad467589046a10e4cf35bd1942, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3201462278022505257, guid: ae8e6bad467589046a10e4cf35bd1942, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0023345947
+      objectReference: {fileID: 0}
+    - target: {fileID: 3201462278022505257, guid: ae8e6bad467589046a10e4cf35bd1942, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0010070801
       objectReference: {fileID: 0}
     - target: {fileID: 3201462278182200043, guid: ae8e6bad467589046a10e4cf35bd1942, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

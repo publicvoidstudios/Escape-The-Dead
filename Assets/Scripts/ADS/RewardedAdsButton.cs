@@ -19,8 +19,17 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
     PlayerProgress playerProgress;
     [SerializeField]
     TMP_Text info;
+    [SerializeField]
+    GameObject aDReady;
+    [SerializeField]
+    GameObject aDNotReady;
+    [SerializeField]
+    GameObject aDWatched;
+    [SerializeField]
+    AdState adState;
+    public bool watched = false;
 
-    void Start()
+    void OnEnable()
     {
         myButton = GetComponent<Button>();
 
@@ -33,6 +42,16 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
         // Initialize the Ads listener and service:
         Advertisement.AddListener(this);
         Advertisement.Initialize(gameId, false); //Set to false when publishing!
+
+        // Swtich button state to Ready
+        SwitchButtonState(AdState.Ready);
+    }
+
+    void OnDisable()
+    {
+        myButton.onClick.RemoveAllListeners();
+
+        Advertisement.RemoveListener(this);
     }
 
     // Implement a function for showing a rewarded video ad:
@@ -47,7 +66,16 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
         // If the ready Placement is rewarded, activate the button: 
         if (placementId == myPlacementId)
         {
-            myButton.interactable = true;
+            if (!watched)
+            {
+                SwitchButtonState(AdState.Ready);
+                myButton.interactable = true;
+            }
+            else
+            {
+                SwitchButtonState(AdState.Watched);
+                myButton.interactable = false;
+            }
         }
     }
 
@@ -58,6 +86,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
         {
             // Reward the user for watching the ad to completion.
             playerProgress.koins += playerProgress.looted / 5;
+            watched = true;
             info.text = "THANKS FOR WATCHING ADS";
         }
         else if (showResult == ShowResult.Skipped)
@@ -79,5 +108,37 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
     public void OnUnityAdsDidStart(string placementId)
     {
         // Optional actions to take when the end-users triggers an ad.
+    }
+
+    private enum AdState
+    {
+        Ready,
+        NotReady,
+        Watched
+    }
+
+    private void SwitchButtonState(AdState state)
+    {
+        switch (state)
+        {
+            case AdState.Ready:
+                aDReady.SetActive(true);
+                aDNotReady.SetActive(false);
+                aDWatched.SetActive(false);
+                adState = AdState.Ready;
+                return;
+            case AdState.NotReady:
+                aDReady.SetActive(false);
+                aDNotReady.SetActive(true);
+                aDWatched.SetActive(false);
+                adState = AdState.NotReady;
+                return;
+            case AdState.Watched:
+                aDReady.SetActive(false);
+                aDNotReady.SetActive(false);
+                aDWatched.SetActive(true);
+                adState = AdState.Watched;
+                return;
+        }
     }
 }

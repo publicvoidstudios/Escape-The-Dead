@@ -93,7 +93,7 @@ public class PlayerProgress : MonoBehaviour
 
     private void Update()
     {
-        looted = koins - startingKoins;
+        looted = koins - startingKoins;        
     }
 
     private void OnApplicationQuit()

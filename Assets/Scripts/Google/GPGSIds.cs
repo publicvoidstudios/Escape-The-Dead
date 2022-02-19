@@ -24,13 +24,29 @@
 
 public static class GPGSIds
 {
-        public const string achievement_guns_guns_guns = "CgkI5-TuuY0OEAIQAg"; // <GPGSID>
-        public const string leaderboard_kings_of_massacre = "CgkI5-TuuY0OEAIQBg"; // <GPGSID>
+        public const string achievement_mass_murderer = "CgkI5-TuuY0OEAIQFw"; // <GPGSID>
+        public const string achievement_legend = "CgkI5-TuuY0OEAIQBA"; // <GPGSID>
+        public const string achievement_half_of_collection = "CgkI5-TuuY0OEAIQDw"; // <GPGSID>
+        public const string achievement_prosperous = "CgkI5-TuuY0OEAIQEw"; // <GPGSID>
+        public const string achievement_nightmare_begins = "CgkI5-TuuY0OEAIQDg"; // <GPGSID>
+        public const string achievement_nerd = "CgkI5-TuuY0OEAIQFg"; // <GPGSID>
+        public const string achievement_guns_collection = "CgkI5-TuuY0OEAIQEA"; // <GPGSID>
+        public const string achievement_hobo = "CgkI5-TuuY0OEAIQEg"; // <GPGSID>
+        public const string achievement_isting_is_300_bucks = "CgkI5-TuuY0OEAIQCw"; // <GPGSID>
         public const string leaderboard_the_great_hodlers = "CgkI5-TuuY0OEAIQBw"; // <GPGSID>
+        public const string achievement_thrifty = "CgkI5-TuuY0OEAIQCg"; // <GPGSID>
+        public const string achievement_adventure_begins = "CgkI5-TuuY0OEAIQAQ"; // <GPGSID>
+        public const string achievement_anniversary = "CgkI5-TuuY0OEAIQFQ"; // <GPGSID>
+        public const string achievement_trendy = "CgkI5-TuuY0OEAIQEQ"; // <GPGSID>
+        public const string achievement_not_so_scary = "CgkI5-TuuY0OEAIQDQ"; // <GPGSID>
+        public const string achievement_guns_guns_guns = "CgkI5-TuuY0OEAIQAg"; // <GPGSID>
+        public const string achievement_vulnerable = "CgkI5-TuuY0OEAIQCA"; // <GPGSID>
+        public const string leaderboard_kings_of_massacre = "CgkI5-TuuY0OEAIQBg"; // <GPGSID>
+        public const string achievement_make_it_loud = "CgkI5-TuuY0OEAIQCQ"; // <GPGSID>
         public const string achievement_new_look = "CgkI5-TuuY0OEAIQAw"; // <GPGSID>
         public const string achievement_a_hundred = "CgkI5-TuuY0OEAIQBQ"; // <GPGSID>
-        public const string achievement_legend = "CgkI5-TuuY0OEAIQBA"; // <GPGSID>
-        public const string achievement_adventure_begins = "CgkI5-TuuY0OEAIQAQ"; // <GPGSID>
+        public const string achievement_moneybags = "CgkI5-TuuY0OEAIQFA"; // <GPGSID>
+        public const string achievement_venerable = "CgkI5-TuuY0OEAIQDA"; // <GPGSID>
 
 }
 

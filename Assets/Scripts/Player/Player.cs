@@ -57,6 +57,14 @@ public class Player : MonoBehaviour
         DissolveHelmet();
         RotateCameraWhileMoving();
         FootstepSound();
+        if (Time.timeSinceLevelLoad < 15f && infected)
+        {
+            GPGSManager.GrantAchievementAnywhere(GPGSIds.achievement_vulnerable);
+        }
+        if(Time.timeSinceLevelLoad >= 300f && !infected)
+        {
+            GPGSManager.GrantAchievementAnywhere(GPGSIds.achievement_venerable);
+        }
     }
 
     private void RotateCameraWhileMoving()
